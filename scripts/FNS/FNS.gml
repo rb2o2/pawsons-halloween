@@ -3,13 +3,13 @@
 function xshift(room, _i,_j){
 	switch(room){
 		case Room1:
-			return _i *24 +320;
+			return _i *global.column_shift +320;
 	}
 }
 function yshift(room, _i,_j){
 	switch (room) {
 		case Room1:
-			return _j * 28 -16*(abs(_i)%2)+16 + 240;
+			return _j * global.row_height -global.sprite_size/2*(abs(_i)%2)+global.sprite_size/2+ 240;
 	}
 }
 function check_milk(){
