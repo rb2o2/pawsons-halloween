@@ -18,6 +18,61 @@ function jfloor() {
 			return obj_level.height - ceil(obj_level.height/2);
 	}
 }
+function move_dl() {
+	var _i=dl(i,j)[0];
+var _j=dl(i,j)[1];
+	if (xshift(room,_i,_j)>0 && 
+	xshift(room,_i,_j)<640-32 && 
+	yshift(room,_i,_j)>0 && 
+	yshift(room,_i,_j)<480-32) {
+		i = _i
+		j = _j
+		y = yshift(room,i,j);
+		x = xshift(room,i,j);
+	}
+}
+function move_ul(){
+	var _i=ul(i,j)[0];
+var _j=ul(i,j)[1];
+	if (xshift(room,_i,_j)>0 && xshift(room,_i,_j)<640-32 && yshift(room,_i,_j)>0 && yshift(room,_i,_j)<480-32) {
+		i = _i;
+		j = _j;
+		y = yshift(room,i,j);
+		x = xshift(room,i,j);
+	}
+}
+function move_dr(){
+	var _i=dr(i,j)[0];
+var _j=dr(i,j)[1];
+	if (xshift(room,_i,_j)>0 && xshift(room,_i,_j)<640-32 && yshift(room,_i,_j)>0 && yshift(room,_i,_j)<480-32) {
+		i = _i;
+		j = _j;
+		y = yshift(room,i,j);
+		x = xshift(room,i,j);
+	}
+}
+function move_ur() {
+	var _i=ur(i,j)[0];
+var _j=ur(i,j)[1];
+	if (xshift(room,_i,_j)>0 && xshift(room,_i,_j)<640-32 && yshift(room,_i,_j)>0 && yshift(room,_i,_j)<480-32) {
+		i = _i;
+		j = _j;
+		y = yshift(room,i,j);
+		x = xshift(room,i,j);
+	}
+}
+function move_up(){
+if (xshift(room,i,j-1)>0 && xshift(room,i,j)<640-32 && yshift(room,i,j-1)>0 && yshift(room,i,j-1)<480-32) {
+j -= 1
+y = yshift(room,i,j);return true;
+} else return false;
+}
+function move_dn(){
+	if (xshift(room,i,j+1)>0 && xshift(room,i,j+1)<640-32 && yshift(room,i,j+1)>0 && yshift(room,i,j+1)<480-32) {
+j += 1;
+y = yshift(room,i,j);
+}
+}
 function check_milk(){
 	for (var _i =0; _i<instance_number(obj_milk);_i++){
 		
@@ -62,4 +117,13 @@ function dr(_i,_j){
 function spill_milk(){
 	obj_milk_controller.slide_down();
 	
+}
+function yarn(_i,_j){
+	for (var _n = 0; _n < instance_number(obj_yarn1); _n++) {
+		if (instance_find(obj_yarn1, _n).x == xshift(room,_i,_j) && 
+			instance_find(obj_yarn1,_n).y == yshift(room,_i,_j)){
+			return instance_find(obj_yarn1, _n);
+		}
+	}
+	return undefined;
 }

@@ -1,15 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
-var _i=dl(i,j)[0];
-var _j=dl(i,j)[1];
-if (obj_random_wall_generator.nowall_dl(room,i,j) && !dead()){
-if (xshift(room,_i,_j)>0 && 
-xshift(room,_i,_j)<640-32 && 
-yshift(room,_i,_j)>0 && 
-yshift(room,_i,_j)<480-32) {
-i = _i
-j = _j
-y = yshift(room,i,j);
-x = xshift(room,i,j);
+
+if (obj_wall_generator.nowall_dl(room,i,j) && !dead()){
+	var _yarn = yarn(dl(i,j)[0], dl(i,j)[1]);
+	var _nyarn = yarn(dl(dl(i,j)[0], dl(i,j)[1])[0],dl(dl(i,j)[0], dl(i,j)[1])[1])
+	if (!is_undefined(_yarn) ) {
+		if (is_undefined(_nyarn) && obj_wall_generator.nowall_dl(room,dl(i,j)[0],dl(i,j)[1])){
+			with(_yarn){move_dl();}
+			move_dl();
+		}
+		
+	} else {
+		move_dl();
+	}
 }
-}
+with (obj_box) {
+if (i == other.i && j == other.j) game_restart();}
+with(obj_pumpkin) {move_to_player();}

@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"Attribution",
+  "name":"Attribution",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

@@ -37,6 +37,7 @@
   "name":"pawsons haloween",
   "resources":[
     {"id":{"name":"fnt_dp_comic","path":"fonts/fnt_dp_comic/fnt_dp_comic.yy",},},
+    {"id":{"name":"Attribution","path":"notes/Attribution/Attribution.yy",},},
     {"id":{"name":"ob_room_overlay","path":"objects/ob_room_overlay/ob_room_overlay.yy",},},
     {"id":{"name":"obj_box","path":"objects/obj_box/obj_box.yy",},},
     {"id":{"name":"obj_dbg","path":"objects/obj_dbg/obj_dbg.yy",},},
@@ -47,8 +48,8 @@
     {"id":{"name":"obj_milk","path":"objects/obj_milk/obj_milk.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_pumpkin","path":"objects/obj_pumpkin/obj_pumpkin.yy",},},
-    {"id":{"name":"obj_random_wall_generator","path":"objects/obj_random_wall_generator/obj_random_wall_generator.yy",},},
     {"id":{"name":"obj_rng","path":"objects/obj_rng/obj_rng.yy",},},
+    {"id":{"name":"obj_wall_generator","path":"objects/obj_wall_generator/obj_wall_generator.yy",},},
     {"id":{"name":"obj_wall1_dl","path":"objects/obj_wall1_dl/obj_wall1_dl.yy",},},
     {"id":{"name":"obj_wall1_dn","path":"objects/obj_wall1_dn/obj_wall1_dn.yy",},},
     {"id":{"name":"obj_wall1_dr","path":"objects/obj_wall1_dr/obj_wall1_dr.yy",},},

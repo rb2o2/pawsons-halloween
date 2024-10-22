@@ -3,6 +3,7 @@
 		if (y >= yshift(room, i, jfloor())) {
 			audio_play_sound(snd_glass_break,1.0,false);
 			instance_destroy();
+			exit;
 		}
 		if (variable_instance_get(self, "slide_anim") && y < variable_instance_get(self,"yfin")) {
 		//animating
@@ -43,13 +44,13 @@
 			ds_list_add(variable_instance_get(self,"_slides"), 0);
 			ds_list_add(variable_instance_get(self,"_slides"), 1);
 		
-			if (!obj_random_wall_generator.nowall_dr(room,variable_instance_get(self,"i"),variable_instance_get(self,"j"))) {
+			if (!obj_wall_generator.nowall_dr(room,variable_instance_get(self,"i"),variable_instance_get(self,"j"))) {
 				ds_list_delete(variable_instance_get(self,"_slides"),ds_list_find_index(variable_instance_get(self,"_slides"), 1));
 			}
-			if (!obj_random_wall_generator.nowall_dl(room,variable_instance_get(self,"i"),variable_instance_get(self,"j"))) {
+			if (!obj_wall_generator.nowall_dl(room,variable_instance_get(self,"i"),variable_instance_get(self,"j"))) {
 				ds_list_delete(variable_instance_get(self,"_slides"),ds_list_find_index(variable_instance_get(self,"_slides"), -1));
 			}
-			if(obj_random_wall_generator.nowall_dn(room,variable_instance_get(self,"i"),variable_instance_get(self,"j"))) {
+			if(obj_wall_generator.nowall_dn(room,variable_instance_get(self,"i"),variable_instance_get(self,"j"))) {
 				if (ds_list_find_index(variable_instance_get(self,"_slides"),-1) >=0) {
 					ds_list_delete(variable_instance_get(self,"_slides"), ds_list_find_index(variable_instance_get(self,"_slides"),-1));
 				}

@@ -1,3 +1,16 @@
 width = 12;
 height = 8;
-//outer_walls();
+walls = array_create(13);
+walls[0] = [-6,3,4];
+walls[1] = [-5,3,4];
+walls[2] = [-5,3,3];
+walls[3] = [-5,3,5];
+walls[4] = [2,-1,1];
+walls[7] = [-1,-1,1];
+walls[8] = [-1,-1,6];
+walls[9] = [1,1,2];
+walls[10] = [1,1,6];
+walls[11] = [1,1,1];
+walls[5] = [3,1,2];
+walls[6] = [3,1,6];
+walls[12] = [3,1,1];

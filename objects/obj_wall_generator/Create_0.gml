@@ -22,8 +22,23 @@ outer_walls = function(){
 		if (_i%2!=0) instance_create_layer(xshift(room,_i, - ceil(obj_level.height/2)),yshift(room,_i, - ceil(obj_level.height/2)),"Instances",obj_wall1_ul);
 		if (_i%2!=0) instance_create_layer(xshift(room,_i, - ceil(obj_level.height/2)),yshift(room,_i, - ceil(obj_level.height/2)),"Instances",obj_wall1_ur);
 	}
-
+	for (var _j = -ceil(obj_level.height/2); _j < obj_level.height - ceil(obj_level.height/2); _j++) {
+		instance_create_layer(xshift(room,-ceil(obj_level.width/2),_j),yshift(room,-ceil(obj_level.width/2),_j),"Instances",obj_wall1_dl);
+		instance_create_layer(xshift(room,-ceil(obj_level.width/2),_j),yshift(room,-ceil(obj_level.width/2),_j),"Instances",obj_wall1_ul);
+		instance_create_layer(xshift(room,(obj_level.width - ceil(obj_level.width/2)),_j), yshift(room,obj_level.width-ceil(obj_level.width/2),_j),"Instances",obj_wall1_dl);
+		instance_create_layer(xshift(room,(obj_level.width - ceil(obj_level.width/2)),_j), yshift(room,obj_level.width-ceil(obj_level.width/2),_j),"Instances",obj_wall1_ul);
+	} 
+	instance_create_layer(xshift(room,(obj_level.width - ceil(obj_level.width/2)), obj_level.height - ceil(obj_level.height/2)), yshift(room,obj_level.width-ceil(obj_level.width/2), obj_level.height - ceil(obj_level.height/2)),"Instances",obj_wall1_ul);
+	instance_create_layer(xshift(room,-ceil(obj_level.width/2), obj_level.height - ceil(obj_level.height/2)),yshift(room,-ceil(obj_level.width/2), obj_level.height - ceil(obj_level.height/2)),"Instances",obj_wall1_ul);
 }
+level_walls = function() {
+ for (var _i = 0; _i < array_length(obj_level.walls); _i++){
+	 var _walls = [obj_wall1_dn,obj_wall1_dr,obj_wall1_ur,obj_wall1_up,obj_wall1_ul,obj_wall1_dl];
+	 instance_create_layer(xshift(room,obj_level.walls[_i][0],obj_level.walls[_i][1]),
+	 yshift(room, obj_level.walls[_i][0], obj_level.walls[_i][1]), "Instances", _walls[obj_level.walls[_i][2]-1]);
+ }
+}
+level_walls();
 outer_walls();
 nowall_dl = function(room,_i,_j){
 	var _w = true;
