@@ -3,7 +3,7 @@
 check_milk();
 if (ate && image_speed ==0){
 	image_speed=0.25;
-	
+	audio_play_sound(snd_slurp,0.1,false);
 } else if (ate && image_index == 0) { ate = false; image_speed=0;}
 else if (not ate) {
 image_speed = 0;

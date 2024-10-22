@@ -12,6 +12,12 @@ function yshift(room, _i,_j){
 			return _j * global.row_height -global.sprite_size/2*(abs(_i)%2)+global.sprite_size/2+ 240;
 	}
 }
+function jfloor() {
+	switch (room) {
+		case Room1:
+			return obj_level.height - ceil(obj_level.height/2);
+	}
+}
 function check_milk(){
 	for (var _i =0; _i<instance_number(obj_milk);_i++){
 		

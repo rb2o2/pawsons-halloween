@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+		if (y >= yshift(room, i, jfloor())) {
+			audio_play_sound(snd_glass_break,1.0,false);
+			instance_destroy();
+		}
 		if (variable_instance_get(self, "slide_anim") && y < variable_instance_get(self,"yfin")) {
 		//animating
 			vspeed += 0.4;
