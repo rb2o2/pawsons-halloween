@@ -1,10 +1,10 @@
 width = 12;
 height = 8;
 walls = array_create(13);
-walls[0] = [-6,3,4];
-walls[1] = [-5,3,4];
-walls[2] = [-5,3,3];
-walls[3] = [-5,3,5];
+walls[0] = [-6,2,4];
+walls[1] = [-5,2,4];
+walls[2] = [-5,2,3];
+walls[3] = [-5,2,5];
 walls[4] = [2,-1,1];
 walls[7] = [-1,-1,1];
 walls[8] = [-1,-1,6];

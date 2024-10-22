@@ -62,9 +62,9 @@
 					ds_list_delete(variable_instance_get(self,"_slides"), ds_list_find_index(variable_instance_get(self,"_slides"),0));
 				}
 			}
-			for (var __sd = 0; __sd < ds_list_size(variable_instance_get(self, "_slides")); __sd++) {
-				show_debug_message(string_concat(instance_id, string(variable_instance_get(self,"_slides")[|__sd])));
-			}
+			//for (var __sd = 0; __sd < ds_list_size(variable_instance_get(self, "_slides")); __sd++) {
+				//show_debug_message(string_concat(instance_id, string(variable_instance_get(self,"_slides")[|__sd])));
+			//}
 			for (var _i =0; _i < instance_number(obj_milk);_i++) {
 				var _o = instance_find(obj_milk,_i);
 			

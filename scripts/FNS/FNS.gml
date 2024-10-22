@@ -12,10 +12,14 @@ function yshift(room, _i,_j){
 			return _j * global.row_height -global.sprite_size/2*(abs(_i)%2)+global.sprite_size/2+ 240;
 	}
 }
+function inroom(arr) {
+	return arr[0] >= - floor(obj_level.width/2) && arr[0] < obj_level.width -floor(obj_level.width/2) && 
+	arr[1] >= -floor(obj_level.height/2) && arr[1] < obj_level.height - floor(obj_level.height/2);
+}
 function jfloor() {
 	switch (room) {
 		case Room1:
-			return obj_level.height - ceil(obj_level.height/2);
+			return obj_level.height - floor(obj_level.height/2);
 	}
 }
 function move_dl() {

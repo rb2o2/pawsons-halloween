@@ -44,6 +44,7 @@
     {"id":{"name":"obj_g","path":"objects/obj_g/obj_g.yy",},},
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},},
     {"id":{"name":"obj_level","path":"objects/obj_level/obj_level.yy",},},
+    {"id":{"name":"obj_merger","path":"objects/obj_merger/obj_merger.yy",},},
     {"id":{"name":"obj_milk_controller","path":"objects/obj_milk_controller/obj_milk_controller.yy",},},
     {"id":{"name":"obj_milk","path":"objects/obj_milk/obj_milk.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
