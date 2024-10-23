@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"MersenneTwister",
   "parent":{
-    "name":"Random Engine",
-    "path":"folders/Random Engine.yy",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

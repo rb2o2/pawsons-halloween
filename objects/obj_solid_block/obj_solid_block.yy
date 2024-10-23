@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_pumpkin",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_solid_block",
+  "eventList":[],
   "managed":true,
-  "name":"obj_pumpkin",
+  "name":"obj_solid_block",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_moving_tile",
-    "path":"objects/obj_moving_tile/obj_moving_tile.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_pumpkin",
-    "path":"sprites/spr_pumpkin/spr_pumpkin.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

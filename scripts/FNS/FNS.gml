@@ -122,11 +122,20 @@ function spill_milk(){
 	obj_milk_controller.slide_down();
 	
 }
-function yarn(_i,_j){
-	for (var _n = 0; _n < instance_number(obj_yarn1); _n++) {
-		if (instance_find(obj_yarn1, _n).x == xshift(room,_i,_j) && 
-			instance_find(obj_yarn1,_n).y == yshift(room,_i,_j)){
-			return instance_find(obj_yarn1, _n);
+function movable_block(_i,_j){
+	for (var _n = 0; _n < instance_number(obj_moving_tile); _n++) {
+		if (instance_find(obj_moving_tile, _n).x == xshift(room,_i,_j) && 
+			instance_find(obj_moving_tile,_n).y == yshift(room,_i,_j)){
+			return instance_find(obj_moving_tile, _n);
+		}
+	}
+	return undefined;
+}
+function solid_block(_i,_j){
+	for (var _n = 0; _n < instance_number(obj_solid_block); _n++) {
+		if (instance_find(obj_solid_block, _n).x == xshift(room,_i,_j) && 
+			instance_find(obj_solid_block,_n).y == yshift(room,_i,_j)){
+			return instance_find(obj_solid_block, _n);
 		}
 	}
 	return undefined;

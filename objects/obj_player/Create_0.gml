@@ -12,3 +12,5 @@ image_speed =0;
 dead = function() {
 return isdead;
 }
+moves = 0;
+milk_n = 0;
