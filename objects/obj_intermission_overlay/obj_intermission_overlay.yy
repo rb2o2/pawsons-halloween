@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_box",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_intermission_overlay",
+  "eventList":[],
   "managed":true,
-  "name":"obj_box",
+  "name":"obj_intermission_overlay",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"intermission",
+    "path":"folders/Rooms/intermission.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_box",
-    "path":"sprites/spr_box/spr_box.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

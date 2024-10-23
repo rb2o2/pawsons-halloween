@@ -46,15 +46,14 @@ nowall_dl = function(room,_i,_j){
 	for (var _c = 0; _c < instance_number(self); _c++)
 	{
 		if (instance_find(self, _c).x == xshift(room,dl(_i,_j)[0],dl(_i,_j)[1]) && 
-			instance_find(self, _c).y == yshift(room,dl(_i,_j)[0],dl(_i,_j)[1]) 
-		) return false;
+			instance_find(self, _c).y == yshift(room,dl(_i,_j)[0],dl(_i,_j)[1]))
+			return false;
 	}}
 	with(obj_wall1_dl){
 	for (var _c =0; _c < instance_number(self); _c++)
 	{
 		if (instance_find(self, _c).x == xshift(room,_i,_j) &&
-		instance_find(self, _c).y == yshift(room,_i,_j)
-		)
+		instance_find(self, _c).y == yshift(room,_i,_j))
 		return false;
 	}}
 	return true;
@@ -65,33 +64,30 @@ var _w = true;
 	for (var _c = 0; _c < instance_number(self); _c++)
 	{
 		if (instance_find(self, _c).x == xshift(room,dn(_i,_j)[0],dn(_i,_j)[1]) && 
-			instance_find(self, _c).y == yshift(room,dn(_i,_j)[0],dn(_i,_j)[1]) 
-		) return false;
+			instance_find(self, _c).y == yshift(room,dn(_i,_j)[0],dn(_i,_j)[1]))
+			return false;
 	}}
 	with(obj_wall1_dn){
 	for (var _c =0; _c < instance_number(self); _c++)
 	{
 		if (instance_find(self, _c).x == xshift(room,_i,_j) &&
-		instance_find(self, _c).y == yshift(room,_i,_j)
-		)
+		instance_find(self, _c).y == yshift(room,_i,_j))
 		return false;
 	}}
 	return true;}
 nowall_dr = function(room,_i,_j){
 var _w = true;
 	with(obj_wall1_ul){
-	for (var _c = 0; _c < instance_number(self); _c++)
-	{
+	for (var _c = 0; _c < instance_number(self); _c++){
 		if (instance_find(self, _c).x == xshift(room,dr(_i,_j)[0],dr(_i,_j)[1]) && 
-			instance_find(self, _c).y == yshift(room,dr(_i,_j)[0],dr(_i,_j)[1]) 
-		) return false;
+			instance_find(self, _c).y == yshift(room,dr(_i,_j)[0],dr(_i,_j)[1]))
+			return false;
 	}}
 	with(obj_wall1_dr){
 	for (var _c =0; _c < instance_number(self); _c++)
 	{
 		if (instance_find(self, _c).x == xshift(room,_i,_j) &&
-		instance_find(self, _c).y == yshift(room,_i,_j)
-		)
+		instance_find(self, _c).y == yshift(room,_i,_j))
 		return false;
 	}}
 	return true;}
@@ -101,15 +97,14 @@ var _w = true;
 	for (var _c = 0; _c < instance_number(self); _c++)
 	{
 		if (instance_find(self, _c).x == xshift(room,up(_i,_j)[0],up(_i,_j)[1]) && 
-			instance_find(self, _c).y == yshift(room,up(_i,_j)[0],up(_i,_j)[1]) 
-		) return false;
+			instance_find(self, _c).y == yshift(room,up(_i,_j)[0],up(_i,_j)[1]))
+			return false;
 	}}
 	with(obj_wall1_up){
 	for (var _c =0; _c < instance_number(self); _c++)
 	{
 		if (instance_find(self, _c).x == xshift(room,_i,_j) &&
-		instance_find(self, _c).y == yshift(room,_i,_j)
-		)
+		instance_find(self, _c).y == yshift(room,_i,_j))
 		return false;
 	}}
 	return true;}
@@ -119,15 +114,14 @@ var _w = true;
 	for (var _c = 0; _c < instance_number(self); _c++)
 	{
 		if (instance_find(self, _c).x == xshift(room,ul(_i,_j)[0],ul(_i,_j)[1]) && 
-			instance_find(self, _c).y == yshift(room,ul(_i,_j)[0],ul(_i,_j)[1]) 
-		) return false;
+			instance_find(self, _c).y == yshift(room,ul(_i,_j)[0],ul(_i,_j)[1]))
+			return false;
 	}}
 	with(obj_wall1_ul){
 	for (var _c =0; _c < instance_number(self); _c++)
 	{
 		if (instance_find(self, _c).x == xshift(room,_i,_j) &&
-		instance_find(self, _c).y == yshift(room,_i,_j)
-		)
+		instance_find(self, _c).y == yshift(room,_i,_j))
 		return false;
 	}}
 	return true;}
@@ -137,15 +131,14 @@ var _w = true;
 	for (var _c = 0; _c < instance_number(self); _c++)
 	{
 		if (instance_find(self, _c).x == xshift(room,ur(_i,_j)[0],ur(_i,_j)[1]) && 
-			instance_find(self, _c).y == yshift(room,ur(_i,_j)[0],ur(_i,_j)[1]) 
-		) return false;
+			instance_find(self, _c).y == yshift(room,ur(_i,_j)[0],ur(_i,_j)[1]))
+			return false;
 	}}
 	with(obj_wall1_ur){
 	for (var _c =0; _c < instance_number(self); _c++)
 	{
 		if (instance_find(self, _c).x == xshift(room,_i,_j) &&
-		instance_find(self, _c).y == yshift(room,_i,_j)
-		)
+		instance_find(self, _c).y == yshift(room,_i,_j))
 		return false;
 	}}
 	return true;}

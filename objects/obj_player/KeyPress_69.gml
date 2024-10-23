@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-
 if (obj_wall_generator.nowall_ur(room,i,j) && !dead()){
     var _yarn = movable_block(ur(i,j)[0], ur(i,j)[1]);
 	var _nyarn = solid_block(ur(ur(i,j)[0], ur(i,j)[1])[0],ur(ur(i,j)[0], ur(i,j)[1])[1])
@@ -9,14 +8,10 @@ if (obj_wall_generator.nowall_ur(room,i,j) && !dead()){
 			with(_yarn){move_ur();obj_merger.try_merge();}
 			move_ur();
 			moves+=1;
-		}
-		
+		}	
 	} else {
 		move_ur();
 		moves+=1;
 	}
 }
-with (obj_box) {
-if (i == other.i && j == other.j) game_restart();}
 with(obj_pumpkin) {move_to_player();}
-

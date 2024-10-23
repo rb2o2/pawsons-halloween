@@ -8,13 +8,10 @@ if (obj_wall_generator.nowall_up(room,i,j) && !dead()){
 			with(_yarn){move_up();obj_merger.try_merge();}
 			move_up();
 			moves+=1;
-		}
-		
+		}	
 	} else {
 		move_up();
 		moves+=1;
 	}
 }
-with (obj_box) {
-if (i == other.i && j == other.j) game_restart();}
 with(obj_pumpkin) {move_to_player();}

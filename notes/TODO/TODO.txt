@@ -1,4 +1,4 @@
 ### 2024-10-23
-- [ ] no fallthrough of tiles
-- [ ] alternate milk fall direction
+- [x] no fallthrough of tiles
+- [x] alternate milk fall direction
 - [ ] level editor

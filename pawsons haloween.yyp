@@ -19,6 +19,7 @@
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"intermission","folderPath":"folders/Rooms/intermission.yy","name":"intermission","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sequences","folderPath":"folders/Sequences.yy","name":"Sequences","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Shaders","folderPath":"folders/Shaders.yy","name":"Shaders","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -44,6 +45,7 @@
     {"id":{"name":"obj_eatable","path":"objects/obj_eatable/obj_eatable.yy",},},
     {"id":{"name":"obj_g","path":"objects/obj_g/obj_g.yy",},},
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},},
+    {"id":{"name":"obj_intermission_overlay","path":"objects/obj_intermission_overlay/obj_intermission_overlay.yy",},},
     {"id":{"name":"obj_level","path":"objects/obj_level/obj_level.yy",},},
     {"id":{"name":"obj_merger","path":"objects/obj_merger/obj_merger.yy",},},
     {"id":{"name":"obj_milk_controller","path":"objects/obj_milk_controller/obj_milk_controller.yy",},},
@@ -61,6 +63,7 @@
     {"id":{"name":"obj_wall1_up","path":"objects/obj_wall1_up/obj_wall1_up.yy",},},
     {"id":{"name":"obj_wall1_ur","path":"objects/obj_wall1_ur/obj_wall1_ur.yy",},},
     {"id":{"name":"obj_yarn1","path":"objects/obj_yarn1/obj_yarn1.yy",},},
+    {"id":{"name":"rm_intermission_score","path":"rooms/rm_intermission_score/rm_intermission_score.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"FNS","path":"scripts/FNS/FNS.yy",},},
     {"id":{"name":"MersenneTwister","path":"scripts/MersenneTwister/MersenneTwister.yy",},},
@@ -83,6 +86,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_intermission_score","path":"rooms/rm_intermission_score/rm_intermission_score.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

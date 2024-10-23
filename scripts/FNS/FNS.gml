@@ -16,10 +16,10 @@ function inroom(arr) {
 	return arr[0] >= - floor(obj_level.width/2) && arr[0] < obj_level.width -floor(obj_level.width/2) && 
 	arr[1] >= -floor(obj_level.height/2) && arr[1] < obj_level.height - floor(obj_level.height/2);
 }
-function jfloor() {
+function jfloor(_i) {
 	switch (room) {
 		case Room1:
-			return obj_level.height - floor(obj_level.height/2);
+			return obj_level.height - floor(obj_level.height/2)-1;
 	}
 }
 function move_dl() {
@@ -84,10 +84,15 @@ function check_milk(){
 		var _oi = _milk.i;var _oj = _milk.j
 		if (_milk.x == obj_player.x && _milk.y == obj_player.y) {
 			instance_destroy(_milk);
+			obj_player.milk_n+=1;
 			obj_player.ate = true;
 		}
 	}
 }
+function rm_name() {
+switch (room){
+	case Room1: return "Level 1";
+}}
 function up(_i,_j){
 	var _arr = array_create(2,0);
 	_arr[0] = _i;_arr[1] = _j-1;

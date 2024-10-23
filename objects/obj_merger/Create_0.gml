@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+balls = 0;
 mesh = array_create(obj_level.height);
 for (var _i = 0; _i < obj_level.height; _i++){
 	mesh[_i] = array_create(obj_level.width);
@@ -59,8 +60,7 @@ merge_yarn = function(){
 		var _list = mesh[_y.j+_h2][_y.i+_w2];
 		
 		if find_dupes(_list) {
-			ds_list_add(_to_merge,_y);	
-			
+			ds_list_add(_to_merge,_y);		
 		}
 	}
 	merge(_to_merge);
@@ -74,13 +74,12 @@ find_dupes = function(_l) {
 	}
 	return false;
 }
-
 merge = function(_is) {
 	for (var _i=0; _i < ds_list_size(_is); _i++) {
 		instance_destroy(_is[|_i]);
+		balls++;
 		audio_play_sound(snd_slurp,1.0,false);
 	}
 }
-
 try_merge = function() {
 clean_mesh();update_merge_mesh();merge_yarn();}
