@@ -9,10 +9,7 @@ else if (not ate) {
 image_speed = 0;
 image_index = 0;
 }
-if (!isdead && xshift(room,i,j) == obj_pumpkin.x && yshift(room,i,j) == obj_pumpkin.y) {
-		isdead = true;
-		vspeed = -4;
-	}
+
 if (isdead) {
 	vspeed = vspeed + 0.25;
 }

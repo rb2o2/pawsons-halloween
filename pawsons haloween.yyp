@@ -65,6 +65,7 @@
     {"id":{"name":"obj_yarn1","path":"objects/obj_yarn1/obj_yarn1.yy",},},
     {"id":{"name":"rm_intermission_score","path":"rooms/rm_intermission_score/rm_intermission_score.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"FNS","path":"scripts/FNS/FNS.yy",},},
     {"id":{"name":"MersenneTwister","path":"scripts/MersenneTwister/MersenneTwister.yy",},},
     {"id":{"name":"snd_glass_break","path":"sounds/snd_glass_break/snd_glass_break.yy",},},
@@ -86,6 +87,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"rm_intermission_score","path":"rooms/rm_intermission_score/rm_intermission_score.yy",},},
   ],
   "templateType":"game",
