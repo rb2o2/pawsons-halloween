@@ -97,9 +97,9 @@ function check_milk(){
 }
 function rm_name() {
 switch (room){
-	case Room1: return "Level 1";
-	case Room2: return "Level 2";
-	case Room3: return "Level 3";
+	case Room1: return "Level 3";
+	case Room2: return "Level 1";
+	case Room3: return "Level 2";
 }}
 function up(_i,_j){
 	var _arr = array_create(2,0);
