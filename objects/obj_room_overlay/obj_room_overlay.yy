@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"ob_room_overlay",
+  "%Name":"obj_room_overlay",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"ob_room_overlay",
+  "name":"obj_room_overlay",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",

@@ -2,9 +2,6 @@
 // You can write your code in this editor
 
 walls_num = 30;
-instance_create_layer(xshift(room,3,-2),yshift(room,3,-2),"Instances",obj_wall1_dl);
-instance_create_layer(xshift(room,3,-2),yshift(room,3,-2),"Instances",obj_wall1_dn);
-instance_create_layer(xshift(room,3,-2),yshift(room,3,-2),"Instances",obj_wall1_dr);
 lev = function () {
 	for (var _i = 0; _i < instance_number(obj_level); _i ++) {
 		if(instance_exists(instance_find(obj_level, _i))) {return instance_find(obj_level, _i);}

@@ -4,6 +4,7 @@ function xshift(room, _i,_j){
 	switch(room){
 		case Room1:
 		case Room2:
+		case Room3:
 			return _i *global.column_shift +320;
 	}
 }
@@ -11,6 +12,7 @@ function yshift(room, _i,_j){
 	switch (room) {
 		case Room1:
 		case Room2:
+		case Room3:
 			return _j * global.row_height -global.sprite_size/2*(abs(_i)%2)+global.sprite_size/2+ 240;
 	}
 }
@@ -22,6 +24,7 @@ function jfloor(_i) {
 	switch (room) {
 		case Room1:
 		case Room2:
+		case Room3:
 			return obj_level.height - floor(obj_level.height/2)-1;
 	}
 }
@@ -96,6 +99,7 @@ function rm_name() {
 switch (room){
 	case Room1: return "Level 1";
 	case Room2: return "Level 2";
+	case Room3: return "Level 3";
 }}
 function up(_i,_j){
 	var _arr = array_create(2,0);

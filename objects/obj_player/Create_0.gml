@@ -14,3 +14,4 @@ return isdead;
 }
 moves = 0;
 milk_n = 0;
+menu_overlay = false;
