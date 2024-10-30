@@ -5,6 +5,8 @@ switch (item) {
 	room_restart();
 	break;
 	case 1:
+	instance_create_depth(0,0,-1001, obj_credits);
+	instance_destroy(self);
 	break;
 	case 2:
 	game_end(0);
