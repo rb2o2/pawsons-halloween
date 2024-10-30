@@ -69,7 +69,7 @@ merge_yarn = function(){
 find_dupes = function(_l) {
 	for (var _i =0; _i < ds_list_size(_l); _i++){
 		for (var _j = _i+1; _j < ds_list_size(_l); _j++){
-			if (abs(_l[|_i]+_l[|_j])%7 == 0) return true;
+			if (abs(_l[|_i]+_l[|_j])%7 == 0 && abs(_l[|_i]) + abs(_l[|_j]) < 8) return true;
 		}
 	}
 	return false;
