@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+audio_stop_all();
 image_xscale = global.sprite_size/global.sprite_size_i; 
 image_yscale = global.sprite_size/global.sprite_size_i; 
 i = 0
@@ -15,3 +16,5 @@ return isdead;
 moves = 0;
 milk_n = 0;
 menu_overlay = false;
+
+audio_play_sound(medley, 0.5, true);

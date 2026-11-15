@@ -1,8 +1,8 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"pawsons haloween",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -28,11 +28,12 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"pawsons haloween",
   "resources":[
@@ -77,8 +78,10 @@
     {"id":{"name":"Room7","path":"rooms/Room7/Room7.yy",},},
     {"id":{"name":"FNS","path":"scripts/FNS/FNS.yy",},},
     {"id":{"name":"MersenneTwister","path":"scripts/MersenneTwister/MersenneTwister.yy",},},
+    {"id":{"name":"medley","path":"sounds/medley/medley.yy",},},
     {"id":{"name":"snd_glass_break","path":"sounds/snd_glass_break/snd_glass_break.yy",},},
     {"id":{"name":"snd_slurp","path":"sounds/snd_slurp/snd_slurp.yy",},},
+    {"id":{"name":"win_chime","path":"sounds/win_chime/win_chime.yy",},},
     {"id":{"name":"room1_bg","path":"sprites/room1_bg/room1_bg.yy",},},
     {"id":{"name":"spr_box","path":"sprites/spr_box/spr_box.yy",},},
     {"id":{"name":"spr_milk","path":"sprites/spr_milk/spr_milk.yy",},},

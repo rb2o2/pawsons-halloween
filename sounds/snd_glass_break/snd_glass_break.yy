@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"snd_glass_break",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
-  "bitRate":128,
+  "channelFormat":0,
   "compression":0,
+  "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.862041,
+  "duration":0.8097959,
+  "exportDir":"",
   "name":"snd_glass_break",
   "parent":{
     "name":"Sounds",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snd_glass_break.mp3",
-  "type":0,
   "volume":1.0,
 }
